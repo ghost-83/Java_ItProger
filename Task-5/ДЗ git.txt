@@ -1,0 +1,21 @@
+﻿Добавляем пользователя в git:
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+ДЗ:
+1. git init - подключаем git к проекту
+2. Создаю файл .gitignore  и прописываю:
+    *.txt
+    bin/
+    admin/
+    config/
+3. git add . - добавляю все файлы для commit
+4. git commit -m "Start project" - сохраняю все файлы в локальном хранилище
+5. git branch name - создаю ветку с именем name
+6. git checkout name - перехожу на ветку name
+7. git add blog/ - добавляю папку blog с файлами: index.js, index.html в ветку name
+8. git checkout master - перехожу в ветку мастер
+9. git remote add origin https://github.com/UserName/ProjectName.git
+10. git push -u origin master
+
+мой гит: https://github.com/ghost-83
