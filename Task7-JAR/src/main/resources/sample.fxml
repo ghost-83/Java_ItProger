@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="300.0" style="-fx-background-color: #d0d0d0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Pane layoutX="4.0" prefHeight="113.0" prefWidth="301.0" style="-fx-background-color: #353353;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="17.0" prefHeight="66.0" prefWidth="176.0" text="Конвертер" textFill="WHITE">
+               <font>
+                  <Font name="Arial Italic" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="21.0" layoutY="225.0" prefHeight="25.0" prefWidth="150.0" text="Значение в тоннах:" AnchorPane.bottomAnchor="195.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelTons" fx:id="labelTons" layoutX="21.0" layoutY="252.0" prefHeight="25.0" prefWidth="260.0" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="299.0" prefHeight="25.0" prefWidth="203.0" text="Значение в киллограммах:" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelKilo" fx:id="labelKilo" layoutX="21.0" layoutY="323.0" prefHeight="25.0" prefWidth="260.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="359.0" prefHeight="25.0" prefWidth="162.0" text="Значение в граммах:" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label id="labelGrams" fx:id="labelGrams" layoutX="21.0" layoutY="388.0" prefHeight="25.0" prefWidth="260.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="TextField textField" fx:id="textField" layoutX="14.0" layoutY="117.0" prefHeight="45.0" prefWidth="266.0" style="-fx-border-radius: 10px; -fx-background-color: #d0d0d0; -fx-border-color: #353353;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></TextField>
+      <ChoiceBox id="choiceBox" fx:id="choiceBox" layoutX="20.0" layoutY="188.0" prefWidth="150.0" AnchorPane.leftAnchor="20.0" />
+   </children>
+</AnchorPane>
