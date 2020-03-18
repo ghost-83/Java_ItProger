@@ -1,0 +1,18 @@
+.home {
+    -fx-background-color: darkslategrey;
+    
+}
+
+.btn{
+    -fx-background-color: orangered;
+    -fx-padding: 10px 20px;
+}
+
+.btn:hover{
+    -fx-translate-y: 5px;
+    
+}
+
+.btn:presset{
+    -fx-background-color: darkred;
+}

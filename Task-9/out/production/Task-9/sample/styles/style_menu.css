@@ -1,0 +1,30 @@
+.home {
+    -fx-background-color: darkslategrey;
+    
+}
+
+.btn{
+    -fx-background-color: darkslategrey;
+    -fx-padding: 10px 20px;
+}
+
+.btn:hover{
+    -fx-background-color: dimgray;
+    
+}
+
+.btn:presset{
+    -fx-background-color: darkred;
+}
+
+.scroll-pane {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
