@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Музыка</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row" wfd-id="1">
+
+            <div class="col-md-8" wfd-id="9">
+                <audio src="" id="audioPlayer" controls="controls" preload="metadata" class="col-md-12">
+                    Sorry, your browser doesn't support html5!
+                </audio>
+                <ul id="playlist" wfd-id="11"><h4>Песни:</h4><hr>
+                    <li wfd-id="13"><a href="music/Fall_Out_Boy_-_Immortals.mp3"><h6>Fall Out Boy - Immortals  _  <small class="text-muted">Добавлено: 18 ноября 2018 </small></h6></a></li>
+                </ul>
+
+                <div class="text-center" wfd-id="10"></div>
+            </div>
+
+            <aside class="col-md-4">
+                <div class="bg-info p-3 mb-3 rounded" wfd-id="4">
+                    <h3><b>Интересные статьи</b></h3>
+                    <p>
+                    </p><ul wfd-id="5">
+                    <li wfd-id="8">
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li wfd-id="7">
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li wfd-id="6">
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3" wfd-id="3">
+                    <img src="image/chelovechik.jpg" width="200">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3" wfd-id="2">
+                    <p>@ СПРАВОЧНИК @<br>   © <i>Сайт является личным справочником владельца :) </i></p>
+                    <hr>
+                    <a href="/Music/Music_Save" class="text-warning"><h5>Загрузить песню</h5></a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer th:replace="blocks/footer :: footer"></footer>
+</body>
+
+<script src="scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/audioPlayer.js"></script>
+<script>
+            // loads the audio player
+            audioPlayer();
+</script>
+</html>

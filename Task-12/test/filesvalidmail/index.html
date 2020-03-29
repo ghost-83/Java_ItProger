@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<style type="text/css">
+	.ok{
+		border: 1px solid green;
+	}
+	.error{
+		border: 1px solid red;
+	}
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i; //name-_09@mail09-.ru
+		var mail = $('#mail');
+		
+		mail.blur(function(){
+			if(mail.val() != ''){
+				if(mail.val().search(pattern) == 0){
+					$('#valid').text('Подходит');
+					$('#submit').attr('disabled', false);
+					mail.removeClass('error').addClass('ok');
+				}else{
+					$('#valid').text('Не подходит');
+					$('#submit').attr('disabled', true);
+					mail.addClass('error');
+				}
+			}else{
+				$('#valid').text('Поле e-mail не должно быть пустым!');
+				mail.addClass('error');
+				$('#submit').attr('disabled', true);
+			}
+		});
+	});	
+</script>
+<title>Валидация поля E-mail</title>
+</head>
+
+<body>
+
+<form>
+	<p>E-mail: <input type="text" name="mail" id="mail" /> <span id="valid"></span></p>
+	<p><input type="submit" name="submit" id="submit" value="Отправить" disabled /></p>
+</form>
+
+</body>
+</html>

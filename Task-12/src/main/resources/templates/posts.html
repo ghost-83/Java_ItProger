@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Посты</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+    <main class="container-fluid mt-3">
+        <div class="row">
+            <div class="row col-md-8">
+                    <div th:each="post : ${posts}" class="alert alert-success ml-5 col col-md-5">
+                        <h1 th:text="${post.title}"/>
+                        <p th:text="${post.anons}"/>
+                        <br>
+                        <hr>
+                        <span th:text="'Публикация: ' + ${post.data}" class="text-muted"/>
+                        <p><b>Категория: </b><mark th:text="${post.sections[0]}"/></p>
+                        <p><b>Автор: </b><mark th:text="${post.author.username}"/></p>
+                        <a th:href="'/post/' + ${post.id}" class="btn btn-outline-dark">Читать далее</a><br>
+                    </div>
+            </div>
+
+            <aside class="col-md-4">
+                <div class="bg-success p-3 mb-3 rounded">
+                    <h3><b>Интересные статьи</b></h3>
+                    <ul wfd-id="5">
+                    <li wfd-id="8">
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li wfd-id="7">
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li wfd-id="6">
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3" wfd-id="3">
+                    <img src="/image/Linux.png" width="200">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ СПРАВОЧНИК @<br>   © <i>Сайт является личным справочником владельца :) </i>
+                    </p><hr>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+    <footer th:replace="blocks/footer :: footer"></footer>
+</body>
+
+<script src="/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+</html>
