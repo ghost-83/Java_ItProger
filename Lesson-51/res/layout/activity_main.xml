@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/result_txt"
+        android:layout_width="313dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="39dp"
+        android:fontFamily="@font/roboto_slab_thin"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="261dp"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/true_name" />
+
+    <Button
+        android:id="@+id/btn_false"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="69dp"
+        android:layout_toEndOf="@+id/btn_true"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/false_name" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="169dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/next_quest"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="266dp"
+        android:layout_height="63dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-101dp"
+        android:layout_toEndOf="@+id/btn_true"
+        android:background="@android:color/holo_orange_light"
+        android:fontFamily="@font/roboto_slab_thin"
+        android:text="Начать заново"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+</RelativeLayout>

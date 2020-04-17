@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">itProger</string>
+    <string name="true_name">Да, верно</string>
+    <string name="false_name">Нет, не верно</string>
+    <string name="next_quest">Следующий вопрос</string>
+
+
+    <string name="quest_1">Земля круглая?</string>
+    <string name="quest_2">Гагарин первый космонавт из живых существ, который побывал в космосе?</string>
+    <string name="quest_3">Правда ли, что некоторые операция делаются без наркоза (операции на мозге)?</string>
+    <string name="quest_4">Правда ли, что сущетсвуют рыбы, умеющие летать?</string>
+    <string name="quest_5">Самый опасный город в мире находиться в Африке?</string>
+</resources>

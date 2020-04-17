@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Запоминалка</string>
+    <string name="info">Приложение для запоминания слов</string>
+    <string name="name_list">Название списка</string>
+    <string name="icon_delet">Удалить</string>
+    <string name="todo">TODO</string>
+</resources>

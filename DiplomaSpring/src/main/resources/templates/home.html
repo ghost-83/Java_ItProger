@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Домашняя</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header th:insert="blocks/header :: header"></header>
+
+        <main class="container mt-3">
+            <dir class="row" >
+
+                <dir class="col-md-8">
+                    <dir class="text-center bg-warning p-2 rounded">
+                        <form th:action="@{/}" method="post">
+                            <h1 class="cover-heading">Добавить ссылку.</h1>
+                            <p class="lead">Для добавления ссылки введите ее название и адрес!</p>
+                            <input type="text" name="title" th:value="${title}" placeholder="Введите название" class="form-control"><br>
+                            <input type="text" name="link" th:value="${link}" placeholder="Введите адрес" class="form-control">
+                            <p class="text-danger" th:text="${message}"/>
+                            <button type="submit" class="btn btn-success">Сохранить</button><br>
+                        </form>
+                    </dir>
+
+                    <dir th:each="link : ${links}" class="alert alert-success">
+                        <a th:href="${link.link}" ><strong class="mr-3">Ссылка: </strong><em th:text="${link.title}"/></a>
+                    </dir>
+                </dir>
+
+                <aside class="col-md-4">
+                    <div class="bg-success p-3 mb-3 rounded">
+                        <h3><b>Интересные статьи</b></h3>
+                        <ul wfd-id="5">
+                            <li wfd-id="8">
+                                <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                            </li>
+                            <li wfd-id="7">
+                                <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                            </li>
+                            <li wfd-id="6">
+                                <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="p-3 mb-3" wfd-id="3">
+                        <img src="image/Linux.png" width="200">
+                    </div>
+                    <div class="bg-dark text-white p-3 mb-3" wfd-id="2">
+                        <p>@ СПРАВОЧНИК @<br>   © <i>Сайт является личным справочником владельца :) </i>
+                        </p><hr>
+                    </div>
+                </aside>
+            </dir>
+        </main>
+    </body>
+
+    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</html>

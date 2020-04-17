@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/bg_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="258dp"
+        android:layout_height="303dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="27dp"
+        android:contentDescription="Album"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/album" />
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="108dp"
+        android:layout_height="248dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Start"
+        android:onClick="OnClickBtn"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/stopBtn"
+        android:layout_width="66dp"
+        android:layout_height="142dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="55dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Stop"
+        android:onClick="OnClickBtn"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/stop" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textBg">Конвертер</string>
+    <string name="textTon">Значение в тоннах:</string>
+    <string name="textKg">Значение в киллограммах:</string>
+    <string name="textGr">Значение в граммах:</string>
+    <string-array name="elements">
+        <item>Тонны</item>
+        <item>Киллограммы</item>
+        <item>Граммы</item>
+    </string-array>
+</resources>

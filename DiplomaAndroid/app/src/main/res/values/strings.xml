@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btn">Готово</string>
+    <string name="editName">Введите название</string>
+    <string name="editLink">Введите ссылку</string>
+    <string name="linkText">Ссылка:</string>
+</resources>
