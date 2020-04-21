@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>JAVA FX</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="text-dark">
+                    <a href="/posts">Вернуться назад</a>
+                    <h1>JAVA FX</h1>
+                    <p>На данной странице описано несколько приложений которые были созданы в процессе обучения. Первое приложение
+                        выполняет функции конвертора масы. При вводе значения проводится конвертация.
+
+                        С программой можно познакомиться скачав ее JAR архив по <a href="/data/Task7-JAR.jar" target="_blank">ссылке.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/Task-7" target="_blank">Cсылкa на git.</a><br><br>
+
+                        Второе приложение выполняет более серьезный функционал. В нем реализован процесс авторизации, регистрации
+                        и личный кабинет для редактирования данных пользователя. <br>
+                        <img src="/image/1/1_2.png" class="img-fluid" alt="Responsive image"><br>
+                        Так же организованно добавление статей на сайт
+                        и их просмотр. Хранение информации выполняется в базе данных MySQL. Данное приложение может быть использовано
+                        для работы с статьями сайта не используя браузер, что дает возможность не реализовывать данный функционал на сайте.
+                        Для ознакомления с работой программы можете посмотреть видео по <a href="https://yadi.sk/i/b-1X1gh9e4RanQ" target="_blank">ссылке.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/Task-9" target="_blank">Cсылкa на git.</a><br><br>
+
+                        Третье приложение, оно же итоговое, приложение для хранения ссылок с коротким именем. <br>
+                        <img src="/image/1/1_3.png" class="img-fluid" alt="Responsive image"><br>
+                        Данное приложение дает возможность хранить ссылке в базе данных MySQL. К данным ссылкам можно получить доступ через сайт написанный
+                        на Spring. Более подробно ознакомится с работой приложения можно в видео по <a href="https://yadi.sk/i/ZUH23xFowgUw_w" target="_blank">ссылке.</a>
+                        В процессе создания приложений были разобраны технологии организации построения приложений с GUI, взаимодействия с базой данных MySQL используя SQL запросы, а так же хеширование паролей
+                        с использованием md5.</p>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/DiplomaFX" target="_blank">Cсылкa на git.</a>
+                    <br>
+                    <hr>
+                <span class="text-muted">Публикация: 20.04.2020</span>
+                <p><b>Категория: </b><mark>JAVA  FX</mark></p>
+                </div>
+            </div>
+            <aside class="col-md-4">
+                <div class="border border-success p-3 mb-3 rounded">
+                    <h3><b>Интересные статьи</b></h3>
+                    <p>
+                    </p><ul>
+                    <li>
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3">
+                    <img src="/image/Java.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ ПОРТФОЛИО @<br>   © <i>Сайт является демонстрационным</i></p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+
+<script src="/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+</html>

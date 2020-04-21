@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Музыка</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row" >
+
+            <div class="col-md-8" >
+                <audio src="" id="audioPlayer" controls="controls" preload="metadata" class="col-md-12">
+                    Sorry, your browser doesn't support html5!
+                </audio>
+                <ul id="playlist" ><h4>Песни:</h4><hr>
+                    <li ><a href="music/94150.mp3"><h6>Trak-1  _  <small class="text-muted">Добавлено: 20 ноября 2019 </small></h6></a></li>
+                    <li ><a href="music/175567.mp3"><h6>Trak-2  _  <small class="text-muted">Добавлено: 30 ноября 2019 </small></h6></a></li>
+                </ul>
+
+                <div class="text-center" ></div>
+            </div>
+
+            <aside class="col-md-4">
+                <div class="bg-info p-3 mb-3 rounded" >
+                    <h3><b>Интересные статьи</b></h3>
+                    <p>
+                    </p><ul >
+                    <li >
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li >
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3">
+                    <img src="image/chelovechik.jpg" width="200">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ ПОРТФОЛИО @<br>   © <i>Сайт является демонстрационным</i></p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+</body>
+
+<script src="scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/audioPlayer.js"></script>
+<script>
+            // loads the audio player
+            audioPlayer();
+</script>
+</html>

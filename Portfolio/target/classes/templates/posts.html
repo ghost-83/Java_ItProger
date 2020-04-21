@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Посты</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+    <main class="container-fluid mt-3">
+        <div class="row">
+            <div class="row col-md-8">
+                <div class="alert alert-success ml-5 col col-md-5">
+                <h1>JAVA FX</h1>
+                <p>На данной странице описано несколько приложений которые были созданы в процессе обучения. Первое приложение
+                    выполняет функции конвертора масы. При вводе значения проводится конвертация.
+                    С программой можно познакомиться скачав ее JAR архив по <a href="/data/Task7-JAR.jar" target="_blank">ссылке.</a><br><br></p>
+                <br>
+                <hr>
+                <span class="text-muted">Публикация: 20.04.2020</span>
+                <p><b>Категория: </b><mark>JAVA</mark></p>
+                <p><b>Автор: </b><mark>admin</mark></p>
+                <a href="/postFX" class="btn btn-outline-dark">Читать далее</a><br>
+            </div>
+                <div class="alert alert-success ml-5 col col-md-5">
+                    <h1>SPRING</h1>
+                    <p>В процессе прохождения курса было реализовано несколько 2 проекта на Java Spring. Один из проектов -
+                        сайт с регистрацией и авторизацией. На сайте так же организованно разделение по ролям и возможность
+                        реактивировать данные (изменение почтового ящика, пароля и роли).</p>
+                    <br>
+                    <hr>
+                    <span class="text-muted">Публикация: 20.04.2020</span>
+                    <p><b>Категория: </b><mark>JAVA</mark></p>
+                    <p><b>Автор: </b><mark>admin</mark></p>
+                    <a href="/postSpring" class="btn btn-outline-dark">Читать далее</a><br>
+                </div>
+                <div class="alert alert-success ml-5 col col-md-5">
+                    <h1>ANDROID</h1>
+                    <p>За время обучения Android разработки, были изучены:
+                        1 Работа с Activity, их жизненный цикл
+                        2 Всплывающие подсказки, диалоговые окна и обработчик событий
+                        3 Переход между страницами в приложении
+                        4 Понятие фрагмента и работа с ними
+                        5 Добавление звука в приложение
+                        6 Работа с db
+                        7 Создание рабочего apk файла приложения</p>
+                    <br>
+                    <hr>
+                    <span class="text-muted">Публикация: 20.04.2020</span>
+                    <p><b>Категория: </b><mark>JAVA</mark></p>
+                    <p><b>Автор: </b><mark>admin</mark></p>
+                    <a href="/postAndroid" class="btn btn-outline-dark">Читать далее</a><br>
+                </div>
+                <div class="alert alert-success ml-5 col col-md-5">
+                    <h1>Диплом</h1>
+                    <p>В процессе прохождения курса было реализованно все поставленные задачи по созданию проектов на Java Spring, JavaFX и Android.</p>
+                    <br>
+                    <hr>
+                    <span class="text-muted">Публикация: 20.04.2020</span>
+                    <p><b>Категория: </b><mark>JAVA</mark></p>
+                    <p><b>Автор: </b><mark>admin</mark></p>
+                    <a href="/post" class="btn btn-outline-dark">Читать далее</a><br>
+                </div>
+            </div>
+
+            <aside class="col-md-4">
+                <div class="bg-success p-3 mb-3 rounded">
+                    <h3><b>Интересные статьи</b></h3>
+                    <ul>
+                    <li>
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3">
+                    <img src="/image/Linux.png" width="200">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ ПОРТФОЛИО @<br>   © <i>Сайт является демонстрационным</i></p>
+                    </p><hr>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+</body>
+
+<script src="/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+</html>

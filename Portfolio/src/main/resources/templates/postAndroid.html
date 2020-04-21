@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Android</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="text-dark">
+                    <a href="/posts">Вернуться назад</a>
+                    <h1>Android</h1>
+                    <p><ul>За время обучения Android разработки, были изучены:
+                    <li>Работа с Activity, их жизненный цикл</li>
+                    <li>Всплывающие подсказки, диалоговые окна и обработчик событий</li>
+                    <li>Переход между страницами в приложении</li>
+                    <li>Понятие фрагмента и работа с ними</li>
+                    <li>Добавление звука в приложение</li>
+                    <li>Работа с базой данных</li>
+                    <li>Создание рабочего apk файла приложения</li>
+                    </ul>
+
+                        Так же было реализовано несколько приложений. Первое приложение выполняет функции конвертора масы(подобное приложение было выполнено на Java FX).<br>
+                        <img src="/image/3/3_1.png" class="img-fluid" alt="Responsive image"><br>
+                        При вводе значения проводится конвертация.
+                        Принцип работы программы показан в видео по <a href="https://yadi.sk/i/wCxyMT7shM8UiQ" target="_blank">ссылке.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/Task-14" target="_blank">Cсылкa на git.</a><br><br>
+
+                        Второе приложение выполняет сохранение вводимых значений ы базе данных. В моем случае это доступный на мобильном телефоне список английских слов слов для повторения.<br>
+                        <img src="/image/3/3_2_1.png" class="img-fluid" alt="Responsive image"><br>
+                        В приложении имеется возможность добавления новых слов с переводом, так и удаление изученных слов. <br>
+                        <img src="/image/3/3_2_2.png" class="img-fluid" alt="Responsive image"><br>
+                        Все фразы сохраняются в базе данных, а в приложении отображены с помощью ListView.
+                        Более детально работу приложения можно увидеть при просмотре видео по <a href="https://yadi.sk/i/9QaoKMwS5Of16Q" target="_blank">ссылке</a> или при установке приложения.
+                        <a href="/data/app-release.apk" target="_blank">Скачать.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/ProgramAPK" target="_blank">Cсылкa на git.</a><br><br>
+
+                        Третье приложение(оно же итоговое), выполняет тот же функционал что и итоговые приложения на Java FX и Spring только без сохранения значений в базе данных.<br>
+                        <img src="/image/3/3_3.png" class="img-fluid" alt="Responsive image"><br>
+                        Кстати в приложении имеется возможность
+                        перехода по адресам коротких ссылок в браузер. Можно создавать короткие ссылки с уникальным именем и нельзя создавать пустые ссылки. Подробней можно ознакомится в видео по <a href="https://yadi.sk/i/a_XVHzPq-g2okA" target="_blank">ссылке.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/DiplomaAndroid" target="_blank">Cсылкa на git.</a>
+                    </p>
+                    <br>
+                    <hr>
+                <span class="text-muted">Публикация:20.04.2020</span>
+                <p><b>Категория: </b><mark>JAVA  Android</mark></p>
+                </div>
+            </div>
+            <aside class="col-md-4">
+                <div class="border border-success p-3 mb-3 rounded">
+                    <h3><b>Интересные статьи</b></h3>
+                    <p>
+                    </p><ul>
+                    <li>
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3">
+                    <img src="/image/Java.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ ПОРТФОЛИО @<br>   © <i>Сайт является демонстрационным</i></p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+
+<script src="/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+</html>

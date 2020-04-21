@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Кино</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row" wfd-id="1">
+
+            <div class="border-danger col-md-2 text-center font-weight-bold bg-secondary" wfd-id="5">
+                <br>
+                <a href="/move"><img src="image/Battleship.jpg" width="150"></a><br>
+                <a href="/move" class="text-warning">Морской бой</a>
+            </div>
+            <br>
+
+            <div class="border-danger col-md-2 text-center font-weight-bold bg-secondary" wfd-id="4">
+                <br>
+                <a href=""><img src="image/Terminator_Genisys.jpg" width="150"></a><br>
+                <a href="" class="text-warning">Терминатор: Генезис</a>
+            </div>
+            <br>
+
+            <div class="border-danger col-md-2 text-center font-weight-bold bg-secondary" wfd-id="3">
+                <br>
+                <a href=""><img src="image/Ant-man_and_Wasp.jpg" width="150"></a><br>
+                <a href="" class="text-warning">Человек-муравей и Оса</a>
+            </div>
+            <br>
+            <div class="col-md-12 text-center" wfd-id="2"></div>
+        </div>
+    </main>
+
+</body>
+
+<script src="scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+</html>

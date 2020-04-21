@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+    <main class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="text-dark">
+                    <a href="/posts">Вернуться назад</a>
+                    <h1>JAVA Spring</h1>
+                    <p>В процессе прохождения курса было реализовано несколько 2 проекта на Java Spring. Один из проектов - сайт с регистрацией и авторизацией.
+                        На сайте так же организованно разделение по ролям и возможность реактивировать данные (изменение почтового ящика, пароля и роли).<br>
+                        <img src="/image/2/2_1.png" class="img-fluid" alt="Responsive image"><br>
+                        Имеется блог, организованна возможность добавления статей.
+                        У статей есть как предварительный просмотр так и подробный с отображением категории, даты создания и
+                        автора. Так же на сайте имеется небольшая панель администратора в которой можно посмотреть всех зарегистрированный
+                        пользователей и статьи написанные каждым из пользователей.<br>
+                        <img src="/image/2/2_2.png" class="img-fluid" alt="Responsive image"><br>
+                        В процессе реализации данного проекта были использованы следующие модули:<br>
+                        1. Основной модуль для работы проекта с сервером TomcatWebServer<br>
+                        2. Библиотека spring-boot-starter-data-jpa для работы с MySQL и модуль с драйверами для работы SQL запросами mysql-connector-java<br>
+                        3. Для организации системы безопасности были использованы модули thymeleaf-extras-springsecurity5 и spring-boot-starter-security. С помощью модуля spring-boot-starter-security
+                        была организованна система авторизации, регистрации и ограничения доступа к материалом сайта.
+                        С помощью thymeleaf-extras-springsecurity5 был разделен доступ к страницам сайта согласно ролей пользователей.<br>
+                        4. В процессе разработки для обработки HTML кода было использовано 2 шаблонизатора mustache и thymeleaf. В итоговом варианте используется<br>
+                        шаблонизатор thymeleaf. Так же была использована техноология bootstrap 4 для построения адаптивных страниц сайта.
+                        Более детально модно увидеть в видео по <a href="https://yadi.sk/i/X_9urfsYg4TkAA" target="_blank">ссылке.</a><br>
+                        <a href="https://github.com/ghost-83/Java_ItProger/tree/master/Task-12" target="_blank">Cсылкa на git.</a><br><br>
+
+                        Второй проект (он же итоговый), это небольшой сайт с возможностью сохранения ссылок в коротком виде.<br>
+                        <img src="/image/2/DZ.png" class="img-fluid" alt="Responsive image"><br>
+                        В проекте организованна проверка на уникальности название короткой ссылки. Все сохраненные ссылки
+                        хранятся в базе данных MySQL. Так же организован доступ к данной таблице в базе через приложение написанное
+                        на JavaFX с подобным функционалом. Более детально модно увидеть в видео по <a href="https://yadi.sk/i/F7xtlFhgmeKyTw" target="_blank">ссылке.</a></p>
+                    <a href="https://github.com/ghost-83/Java_ItProger/tree/master/DiplomaSpring" target="_blank">Cсылкa на git.</a>
+                    <br>
+                    <hr>
+                <span class="text-muted">Публикация: 20.04.2020</span>
+                <p><b>Категория: </b><mark>JAVA  Spring</mark></p>
+                </div>
+            </div>
+            <aside class="col-md-4">
+                <div class="border border-success p-3 mb-3 rounded">
+                    <h3><b>Интересные статьи</b></h3>
+                    <p>
+                    </p><ul>
+                    <li>
+                        <a class="nav-link text-dark" href="http://www.firststeps.ru/linux/general1.html" target="_blank">Программирование под Linux</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="https://ubuntu.ru" target="_blank">Ubuntu по русски.</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="http://ubuntism.ru/terminal-commands-for-linux/" target="_blank">Убунтизм для пользователя</a>
+                    </li>
+                </ul>
+                    <p></p>
+                </div>
+                <div class="p-3 mb-3">
+                    <img src="/image/Java.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="bg-dark text-white p-3 mb-3">
+                    <p>@ ПОРТФОЛИО @<br>   © <i>Сайт является демонстрационным</i></p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+</body>
+
+<script src="/scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+</html>
